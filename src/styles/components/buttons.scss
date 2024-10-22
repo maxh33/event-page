@@ -1,0 +1,38 @@
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        background-color: #4F2AC3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: all 1.5s;
+
+        &:hover {
+            background-color: #3A1D8A;
+            transform: scale(1.15);
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (min-width: 641px) and (max-width: 1023px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        &--prog {
+            width: 50%;
+            margin-bottom: 32px;
+        }
+    }
+}
